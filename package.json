@@ -25,7 +25,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "3.4.1",
     "yarn": "^1.22.18",
-    "homepage": "https://swathihl2.github.io/find-my-patient/"
+    "homepage": "https://swathihl2.github.io"
   },
   "scripts": {
     "start": "react-scripts start",
