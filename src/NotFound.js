@@ -11,7 +11,7 @@ const NotFound = () => {
   return (
     <div>
       <center>
-        <h1>404 - Page Not Found!</h1>
+        <h1>404 - Page Not Found...!</h1>
         <Button onClick={gohome}> Goto Home</Button>
       </center>
     </div>
