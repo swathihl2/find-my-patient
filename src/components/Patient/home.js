@@ -8,8 +8,8 @@ import PatientList from './updatePatient';
 
 /**
  * Loads Patient home page,Add patient form and Patient table
- *
- * @returns Patient home content
+ * 
+ * @returns Patient home content 
  */
 const PatientHome = () => {
   const navigate = useNavigate();
@@ -27,11 +27,11 @@ const PatientHome = () => {
   }
 
   if (PatientName === undefined || PatientName === null) {
-    window.location.href = '/Find-My-Patient';
+    window.location.href = '/';
   }
   const logout = () => {
     localStorage.removeItem('PatientName');
-    navigate('/Find-My-Patient');
+    navigate('/');
   };
 
   return (

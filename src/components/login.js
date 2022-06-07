@@ -13,7 +13,7 @@ import { error } from '../helpers/LoginHelpers';
 
 /**
  * Loads Login Form
- *
+ * 
  * @param {integer} handleChange represents to set a new state for the input.
  * @returns Login form content
  */
@@ -70,7 +70,7 @@ const Login = ({ handleChange }) => {
             localStorage.setItem('PatientName', userName);
             localStorage.setItem('PatientPassword', password);
             document.getElementById('background-image').style.backgroundImage = '';
-            navigate('/Find-My-Patient/patient');
+            navigate('/patient');
           }
         }
         setSuccess(<div style={{ color: 'red' }}>Invalid Username or Password</div>);

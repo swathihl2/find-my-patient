@@ -9,17 +9,17 @@ import SomethinWentWrong from './error';
 
 /**
  * Routes patient home page,login form and error handling pages
- *
+ * 
  * @returns routes url paths
  */
 const App = () => (
   <div className="App">
     <BrowserRouter>
       <Routes>
-        <Route exact path="/Find-My-Patient" element={<SignInOutContainer />} />
-        <Route exact path="/Find-My-Patient/patient" element={<PatientHome />} />
-        <Route exact path="/Find-My-Patient/Error" element={<SomethinWentWrong />} />
-        <Route path="/Find-My-Patient/*" element={<NotFound />} />
+        <Route exact path="/" element={<SignInOutContainer />} />
+        <Route exact path="/patient" element={<PatientHome />} />
+        <Route exact path="/Error" element={<SomethinWentWrong />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </div>

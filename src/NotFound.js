@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const NotFound = () => {
   const navigate = useNavigate();
   const gohome = () => {
-    navigate('/Find-My-Patient');
+    navigate('/');
   };
   return (
     <div>
