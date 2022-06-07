@@ -16,10 +16,10 @@ const App = () => (
   <div className="App">
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<SignInOutContainer />} />
-        <Route exact path="/patient" element={<PatientHome />} />
-        <Route exact path="/Error" element={<SomethinWentWrong />} />
-        <Route path="*" element={<NotFound />} />
+        <Route exact path="/find-my-patient" element={<SignInOutContainer />} />
+        <Route exact path="/find-my-patient/patient" element={<PatientHome />} />
+        <Route exact path="/find-my-patient/Error" element={<SomethinWentWrong />} />
+        <Route path="/find-my-patient/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </div>

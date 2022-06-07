@@ -27,11 +27,11 @@ const PatientHome = () => {
   }
 
   if (PatientName === undefined || PatientName === null) {
-    window.location.href = '/';
+    window.location.href = '/find-my-patient';
   }
   const logout = () => {
     localStorage.removeItem('PatientName');
-    navigate('/');
+    navigate('/find-my-patient');
   };
 
   return (

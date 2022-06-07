@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 const SomethinWentWrong = () => {
   const navigate = useNavigate();
   const gohome = () => {
-    navigate('/');
+    navigate('/find-my-patient');
   };
   return (
     <div>

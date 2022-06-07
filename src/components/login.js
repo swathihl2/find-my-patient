@@ -70,7 +70,7 @@ const Login = ({ handleChange }) => {
             localStorage.setItem('PatientName', userName);
             localStorage.setItem('PatientPassword', password);
             document.getElementById('background-image').style.backgroundImage = '';
-            navigate('/patient');
+            navigate('/find-my-patient/patient');
           }
         }
         setSuccess(<div style={{ color: 'red' }}>Invalid Username or Password</div>);
