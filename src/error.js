@@ -5,13 +5,13 @@ import { useNavigate } from 'react-router-dom';
 
 /**
  * Handles unusual behaviour
- * 
+ *
  * @returns error content
  */
 const SomethinWentWrong = () => {
   const navigate = useNavigate();
   const gohome = () => {
-    navigate('/');
+    navigate('/Find-My-Patient');
   };
   return (
     <div>

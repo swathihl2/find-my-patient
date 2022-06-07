@@ -13,7 +13,7 @@ import { error } from '../helpers/LoginHelpers';
 
 /**
  * Loads Login Form
- * 
+ *
  * @param {integer} handleChange represents to set a new state for the input.
  * @returns Login form content
  */
@@ -56,6 +56,7 @@ const Login = ({ handleChange }) => {
     }
     if (flag >= 2) {
       instance.get('/results.json').then((resopnse) => {
+        // eslint-disable-next-line no-restricted-syntax
         for (const i in resopnse.data) {
           if (resopnse.data[i].userName === userName && resopnse.data[i].password === password) {
             setSuccess(<div style={{ color: 'green' }}>Successfully Logged </div>);
@@ -69,7 +70,7 @@ const Login = ({ handleChange }) => {
             localStorage.setItem('PatientName', userName);
             localStorage.setItem('PatientPassword', password);
             document.getElementById('background-image').style.backgroundImage = '';
-            navigate('/patient');
+            navigate('/Find-My-Patient/patient');
           }
         }
         setSuccess(<div style={{ color: 'red' }}>Invalid Username or Password</div>);
