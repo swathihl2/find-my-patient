@@ -13,7 +13,7 @@ import { error } from '../helpers/LoginHelpers';
 
 /**
  * Loads Login Form
- * 
+ *
  * @param {integer} handleChange represents to set a new state for the input.
  * @returns Login form content
  */

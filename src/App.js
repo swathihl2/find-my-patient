@@ -9,7 +9,7 @@ import SomethinWentWrong from './error';
 
 /**
  * Routes patient home page,login form and error handling pages
- * 
+ *
  * @returns routes url paths
  */
 const App = () => (

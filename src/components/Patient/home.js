@@ -8,8 +8,8 @@ import PatientList from './updatePatient';
 
 /**
  * Loads Patient home page,Add patient form and Patient table
- * 
- * @returns Patient home content 
+ *
+ * @returns Patient home content
  */
 const PatientHome = () => {
   const navigate = useNavigate();
