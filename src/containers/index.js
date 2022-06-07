@@ -11,12 +11,12 @@ import Signup from '../components/signup';
 
 /**
  * Handles user login form and signup form
- * 
+ *
  * @returns user login page
  */
 const SignInOutContainer = () => {
-  document.getElementById('background-image').style.backgroundImage = 'url(https://t4.ftcdn.net/jpg/00/83/83/63/240_F_83836356_nfYi9d7pg9qFHrQKcAX61MNrSP4dOdW2.jpg)'
-  document.getElementById('background-image').style.opacity = '0.9'
+  document.getElementById('background-image').style.backgroundImage = 'url(https://t4.ftcdn.net/jpg/00/83/83/63/240_F_83836356_nfYi9d7pg9qFHrQKcAX61MNrSP4dOdW2.jpg)';
+  document.getElementById('background-image').style.opacity = '0.9';
 
   const paperStyle = { width: 340, margin: '20px auto' };
   const [value, setValue] = useState(0);
