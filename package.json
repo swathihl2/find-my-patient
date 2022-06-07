@@ -1,27 +1,49 @@
 {
-  "name": "find-my-patient",
+  "name": "react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "@date-io/date-fns": "^1.3.13",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@material-ui/pickers": "^3.3.10",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.1.2",
+    "ag-grid-community": "^23.2.0",
+    "ag-grid-enterprise": "^23.2.0",
+    "ag-grid-react": "^23.2.0",
+    "axios": "^0.19.2",
+    "chokidar": "^2.1.8",
+    "date-fns": "^2.28.0",
+    "react": "^16.13.1",
+    "react-bootstrap-validation": "^0.1.11",
+    "react-calendar": "^3.7.0",
+    "react-dom": "^16.13.1",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "3.4.1",
+    "yarn": "^1.22.18"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.jsx ."
   },
+
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "rules": {
+      "no-shadow": "off",
+      "radix": "off"
+    },
+    "extends" : "terra",
+    "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  }
   },
   "browserslist": {
     "production": [
@@ -34,5 +56,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-terra": "^2.3.0"
+    }
 }

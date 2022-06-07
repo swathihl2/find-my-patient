@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SignInOutContainer from './containers';
+import PatientHome from './components/Patient/home';
+import NotFound from './NotFound';
+import SomethinWentWrong from './error';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+/**
+ * Routes patient home page,login form and error handling pages
+ * 
+ * @returns routes url paths
+ */
+const App = () => (
+  <div className="App">
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<SignInOutContainer />} />
+        <Route exact path="/patient" element={<PatientHome />} />
+        <Route exact path="/Error" element={<SomethinWentWrong />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  </div>
+);
 
 export default App;
